@@ -20,7 +20,7 @@ tags: ["open-source", "asic", "verilator", "icarus", "yosys", "fibonacci"]
 
 ```mermaid
 
-flowchart LR
+flowchart TD
   subgraph Design
     A((Start))
     B[Write Imm + Conc SVA + Formal]
