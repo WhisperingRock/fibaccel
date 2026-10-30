@@ -1,0 +1,20 @@
+[tasks]
+bmc
+prove
+cover
+
+[options]
+bmc:   mode bmc
+prove: mode prove
+cover: mode cover
+depth 12
+ 
+[engines]
+smtbmc boolector
+
+[script]
+read -formal rtl/BKAdder.sv
+prep -top BKAdder
+
+[files]
+../../rtl/

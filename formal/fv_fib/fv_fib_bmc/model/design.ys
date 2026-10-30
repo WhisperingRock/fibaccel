@@ -1,0 +1,10 @@
+# running in fv_fib_bmc/src/
+read -formal rtl/Mux_N.sv
+read -formal rtl/BKAdder.sv
+read -formal rtl/fib.sv
+prep -top fib
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

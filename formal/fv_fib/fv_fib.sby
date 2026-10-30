@@ -1,0 +1,22 @@
+[tasks]
+bmc
+prove
+cover
+
+[options]
+bmc:   mode bmc
+prove: mode prove
+cover: mode cover
+depth 20
+ 
+[engines]
+smtbmc boolector
+
+[script]
+read -formal rtl/Mux_N.sv
+read -formal rtl/BKAdder.sv
+read -formal rtl/fib.sv
+prep -top fib
+
+[files]
+../../rtl/

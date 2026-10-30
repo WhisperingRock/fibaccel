@@ -1,0 +1,13 @@
+[options]
+mode prove
+depth 12
+ 
+[engines]
+smtbmc boolector
+
+[script]
+read -formal rtl/BKAdder.sv
+prep -top BKAdder
+
+[files]
+../../rtl/

@@ -1,0 +1,7 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:05 (5)
+Elapsed process time [H:MM:SS (secs)]: 0:00:09 (9)
+engine_0 (smtbmc boolector) returned pass for basecase
+engine_0 (smtbmc boolector) returned FAIL for induction
+counterexample trace [induction]: engine_0/trace_induct.vcd
+counterexample trace [induction]: engine_0/trace_induct.yw
+  failed assertion fib._witness_.check_rtl_fib_sv_419_assert_84 at rtl/fib.sv:419.5-419.34

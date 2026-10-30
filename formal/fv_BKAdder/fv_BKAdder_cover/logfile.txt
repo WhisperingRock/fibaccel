@@ -1,0 +1,19 @@
+SBY 15:59:49 [fv_BKAdder_cover] Removing directory '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/fv_BKAdder_cover'.
+SBY 15:59:49 [fv_BKAdder_cover] Copy '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/../../rtl' to '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/fv_BKAdder_cover/src/rtl'.
+SBY 15:59:49 [fv_BKAdder_cover] engine_0: smtbmc boolector
+SBY 15:59:49 [fv_BKAdder_cover] base: starting process "cd fv_BKAdder_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 15:59:49 [fv_BKAdder_cover] base: finished (returncode=0)
+SBY 15:59:49 [fv_BKAdder_cover] prep: starting process "cd fv_BKAdder_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY 15:59:49 [fv_BKAdder_cover] prep: finished (returncode=0)
+SBY 15:59:49 [fv_BKAdder_cover] smt2: starting process "cd fv_BKAdder_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 15:59:49 [fv_BKAdder_cover] smt2: finished (returncode=0)
+SBY 15:59:49 [fv_BKAdder_cover] engine_0: starting process "cd fv_BKAdder_cover; yosys-smtbmc -s boolector --presat --unroll -c --noprogress -t 12  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 15:59:49 [fv_BKAdder_cover] engine_0: ##   0:00:00  Solver: boolector
+SBY 15:59:49 [fv_BKAdder_cover] engine_0: ##   0:00:00  Status: passed
+SBY 15:59:49 [fv_BKAdder_cover] engine_0: finished (returncode=0)
+SBY 15:59:49 [fv_BKAdder_cover] engine_0: Status returned by engine: pass
+SBY 15:59:49 [fv_BKAdder_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:59:49 [fv_BKAdder_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:59:49 [fv_BKAdder_cover] summary: engine_0 (smtbmc boolector) returned pass
+SBY 15:59:49 [fv_BKAdder_cover] summary: engine_0 did not produce any traces
+SBY 15:59:49 [fv_BKAdder_cover] DONE (PASS, rc=0)

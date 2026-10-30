@@ -1,0 +1,179 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$1420] false)
+assume (= [$auto$async2sync.cc:116:execute$1418] false)
+assume (= [$auto$async2sync.cc:116:execute$1424] false)
+assume (= [CS] #b00)
+assume (= [_witness_.anyinit_procdff_1364] false)
+assume (= [_witness_.anyinit_procdff_1365] false)
+assume (= [_witness_.anyinit_procdff_1366] false)
+assume (= [_witness_.anyinit_procdff_1367] false)
+assume (= [_witness_.anyinit_procdff_1368] false)
+assume (= [_witness_.anyinit_procdff_1369] false)
+assume (= [_witness_.anyinit_procdff_1370] false)
+assume (= [_witness_.anyinit_procdff_1371] false)
+assume (= [_witness_.anyinit_procdff_1372] false)
+assume (= [_witness_.anyinit_procdff_1373] false)
+assume (= [_witness_.anyinit_procdff_1374] false)
+assume (= [_witness_.anyinit_procdff_1375] false)
+assume (= [_witness_.anyinit_procdff_1376] false)
+assume (= [_witness_.anyinit_procdff_1377] #b00000000)
+assume (= [_witness_.anyinit_procdff_1378] #b00000000)
+assume (= [_witness_.anyinit_procdff_1379] false)
+assume (= [_witness_.anyinit_procdff_1380] false)
+assume (= [calc_sel_out] false)
+assume (= [f_past_valid] false)
+assume (= [fib_sel_out] #b00)
+assume (= [i] #b00000000)
+assume (= [lut_lookup] #b00000000000000000000000000000000)
+assume (= [n_captured] #b00000000)
+assume (= [regC] #b00000000000000000000000000000000)
+assume (= [regD] #b00000000000000000000000000000000)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$949] #b0000) #b00000000000000000000000000000000)
+assume (= (select [$auto$proc_rom.cc:155:do_switch$949] #b0001) #b00000000000000000000000000000000)
+
+state 0
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 1
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 2
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 3
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 4
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 5
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 6
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 7
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 8
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 9
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 10
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 11
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 12
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 13
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 14
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 15
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] false)
+assume (= [valid_i] false)
+
+state 16
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] true)
+assume (= [valid_i] false)
+
+state 17
+assume (= [clk_i] false)
+assume (= [n_i] #b00000001)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] true)
+assume (= [valid_i] true)
+
+state 18
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] true)
+assume (= [valid_i] false)
+
+state 19
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] true)
+assume (= [valid_i] false)
+
+state 20
+assume (= [clk_i] false)
+assume (= [n_i] #b00000000)
+assume (= [rdy_out_i] false)
+assume (= [rstn_i] true)
+assume (= [valid_i] false)

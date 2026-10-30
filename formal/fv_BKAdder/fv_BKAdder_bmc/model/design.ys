@@ -1,0 +1,8 @@
+# running in fv_BKAdder_bmc/src/
+read -formal rtl/BKAdder.sv
+prep -top BKAdder
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il
