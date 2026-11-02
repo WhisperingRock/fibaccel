@@ -23,4 +23,4 @@
 ##   0:00:00  Checking assertions in step 10..
 ##   0:00:00  Checking assumptions in step 11..
 ##   0:00:00  Checking assertions in step 11..
-##   0:00:01  Status: passed
+##   0:00:00  Status: passed
