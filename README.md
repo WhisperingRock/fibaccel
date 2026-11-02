@@ -1,52 +1,35 @@
 ---
-title: README
 description: Open-Source ASIC in designing a Fibonacci accelerator
 author: WhisperingRock
-tags: ["open-source", "asic", "verilator", "icarus", "yosys", "fibonacci"]
+tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", "fibonacci"]
 ---
 
 ## :toolbox: Toolset
-| Tool | Lint | SVA | Formal(BMC) | Formal(Ind) | Netlist schematic | Synth + Impl | Design Checks |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Verilator | &check; |  &check; |  |
-| Icarus | &check; |  &check; (no concurr) |  |
-| Yosys |  |  | &check; | &check; | &check; |
-| LibreLane | | | | | | &check; | &check; |
-
-
-
+| Phase | Verilator | Icarus | Yosys | Librelane |
+| ---      | --- | --- | --- | --- |
+| Lint     | &check; |&check; |
+| SVA      | &check; | :heavy_division_sign: |
+| Formal   ||| &check; |
+| Coverage | &check; |
+| DRC Check|||| &check; |
+| LVS Check|||| &check; |
+| STA Check|||| &check; |
+|Annt Check|||| &check; |
+|Gate-Level|| &check; |
+|Design Area|||| &check; |
 
 ##  Workflow
+![work](./docs/flow.png)
 
-```mermaid
+## Current Design
+![top](./docs/version0/top.png)
+![fsm](./docs/version1/fsm.png)
+![acc](./docs/version1/accelerator.png)
 
-flowchart TD
-  subgraph Design
-    A((Start))
-    B[Write Imm + Conc SVA + Formal]
-    C[write RTL]
-    D{pass Lint\n?}
-    E{pass SVA\n?}
-    F{pass Formal\n?}
-    G{good coverage\n?}
-    H[view Netlist Sch]
-    I((Layout))
-  end
-  A --> B --> C --> D
-  D -- NO --> C
-  D -- YES --> E
-  E -- NO --> C
-  E -- YES --> F
-  F -- NO --> C
-  F -- YES --> G
-  G -- NO --> B
-  G -- YES --> H
-  H --> I
-```
-
-## TODO
+##  Task Management
 - [X] DESIGN : First pass
-- [ ] LAYOUT : Correct STA violations 
-- [ ] LAYOUT : gate-level testing
-
+- [X] LAYOUT : Correct STA violations 
+- [X] LAYOUT : Gate-level testing
+- [ ] FORMAL : Complete BMC modeling
+- [ ] FORMAL : Attempt IND modeling
 
