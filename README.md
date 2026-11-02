@@ -18,6 +18,8 @@ tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", "fibo
 |Gate-Level|| &check; |
 |Design Area|||| &check; |
 
+:heavy_division_sign: - Icarus doesn't support concurrent SVA
+
 ##  Workflow
 ![work](./docs/flow.png)
 
@@ -25,6 +27,9 @@ tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", "fibo
 ![top](./docs/report/version0/top.png)
 ![fsm](./docs/report/version1/fsm.png)
 ![acc](./docs/report/version1/accelerator.png)
+
+Currently producing two terms per clk at 66MHz at
+a die area of 21,000 um2.
 
 ##  Task Management
 - [X] DESIGN : First pass
