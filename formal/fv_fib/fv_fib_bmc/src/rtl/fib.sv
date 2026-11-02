@@ -35,13 +35,12 @@ module fib
 
 
 	// ~~~~ local vars ~~~~
-	typedef enum logic [1:0] {RESET, IMPORT, CALC, EXPORT} e_state;
+	typedef enum logic [2:0] {RESET, IMPORT, PRECALC, CALC, EXPORT} e_state;
 	e_state CS, NS;
 
 	localparam logic [7:0] LUTMAX 		= 8'h0F; //15
 	localparam logic [7:0] NMAX 		= 8'h2F; //47
-	localparam logic [31:0] FIBMAX		= 32'd2971215073;
-	localparam logic [31:0] ERR_CODE	= 32'hFFFF_FFFF;
+	localparam logic [31:0] INACTIVE	= 32'hFFFF_FFFF;
 
 	function logic [15:0] LUT (input logic [3:0] idx);
 		case(idx)
@@ -65,43 +64,33 @@ module fib
 		endcase
 	endfunction
 
-	logic				calc_sel_in, 
-						calc_rg_en,
-//						clear_reg,
-						calc_sel_out,
-						calcselout_,
-						is_looping, 
-						calc_done;
-//						reg_overflow;
-	logic [1:0]			fib_sel_out,
-						fibsel_;
+	logic				sel_in, 
+						rg_en;
+	logic [1:0]			sel_out_next,
+						sel_out_curr;
 	logic [OUTBITS-1:0]	regC, regD;
-	logic [INBITS-1:0]	n_captured,
-						n_,
+	logic [INBITS-1:0]	n_curr,
+						n_next,
 						i,
 						i_next;
-
-	assign calc_done 	= (fib_sel_out[0]) || (!is_looping); 
-	//assign calc_done 	= (fibsel_[0]) || (!is_looping); 
-	//assign reg_overflow = (regC > FIBMAX) || (regD > FIBMAX); 
 
 
 	// ~~~~ module instantiations ~~~~
 	
 	logic [1:0][OUTBITS-1:0]mux_din_a,
-							mux_din_b,
-							mux_din_calc;
-	logic [3:0][OUTBITS-1:0]mux_din_fib;
+							mux_din_b;
+	logic [3:0][OUTBITS-1:0]mux_din_c;
 	logic [OUTBITS-1:0]		mux_dout_a,
-							mux_dout_b,
-							mux_dout_calc,
-							lut_lookup;
+							mux_dout_b;
 
-	assign mux_din_a 	= {regC, {{(16){1'b0}}, 16'd377} };
-	assign mux_din_b 	= {regD, {{(16){1'b0}}, 16'd610} };
-	assign mux_din_calc = {regD, regC};
-	assign lut_lookup	= {16'h0000, LUT(n_captured[3:0])};
-	assign mux_din_fib	= {ERR_CODE, ERR_CODE, lut_lookup, mux_dout_calc};
+	assign mux_din_a 	= {regC, {16'd0, 16'd377} };
+	assign mux_din_b 	= {regD, {16'd0, 16'd610} };
+	assign mux_din_c	= {
+							regC, 
+							regD, 
+							{16'd0, LUT(n_curr[3:0])}, 
+							INACTIVE
+						};
 
 	Mux_N
 	#(
@@ -112,7 +101,7 @@ module fib
 	mux_a 
 	(
 		.DIN		(mux_din_a),
-		.SEL		(calc_sel_in),
+		.SEL		(sel_in),
 		.DOUT		(mux_dout_a)
 	);
 
@@ -125,21 +114,8 @@ module fib
 	mux_b
 	(
 		.DIN		(mux_din_b),
-		.SEL		(calc_sel_in),
+		.SEL		(sel_in),
 		.DOUT		(mux_dout_b)
-	);
-
-	Mux_N
-	#(
-		.WIDTH		(OUTBITS),
-		.INPUTS		(2),
-		.SEL_WIDTH	()
-	)
-	mux_calc
-	(
-		.DIN		(mux_din_calc),
-		.SEL		(calc_sel_out),
-		.DOUT		(mux_dout_calc)
 	);
 
 	Mux_N
@@ -150,8 +126,8 @@ module fib
 	)
 	mux_fib
 	(
-		.DIN		(mux_din_fib),
-		.SEL		(fib_sel_out),
+		.DIN		(mux_din_c),
+		.SEL		(sel_out_curr),
 		.DOUT		(fib_o)
 	);
 
@@ -185,36 +161,27 @@ module fib
 	always_ff @(posedge clk_i) begin
 		
 		// ~~ priority 0 : reset
-		//if(rstn_i == 1'b0 || reg_overflow) begin
 		if(rstn_i == 1'b0 ) begin
-			i			<= '0;
-			n_captured	<= '0;
-			fib_sel_out <= '0;
-			regC		<= '0;
-			regD		<= '0;
-			CS			<= RESET;
+			i				<= '0;
+			n_curr			<= '0;
+			sel_out_curr 	<= 2'b00;
+			regC			<= '0;
+			regD			<= '0;
+			CS				<= RESET;
 		end
+
 		// ~~ priority 1 : state wiggles ~~
 		else begin 
-			i			<= i_next;
-			n_captured	<= n_;
-			fib_sel_out <= fibsel_;
-			calc_sel_out<= calcselout_;
-		
-			// register update
-/*
-			if(clear_reg) begin
-				regC	<= '0;
-				regD	<= '0;
-			end
-			else 
-*/
-			if(calc_rg_en) begin
-				regC	<= c_sum;
-				regD	<= d_sum;
+			i				<= i_next;
+			n_curr			<= n_next;
+			sel_out_curr	<= sel_out_next;
+	
+			if(rg_en) begin
+				regC		<= c_sum;
+				regD		<= d_sum;
 			end
 
-			CS 			<= NS; 
+			CS 				<= NS; 
 		end
 	end
 
@@ -227,108 +194,91 @@ module fib
 		rdy_in_o 		= 1'b0; 
 		valid_o			= 1'b0;
 		i_next			= '0;
-		//clear_reg		= 1'b0;
-		n_				= n_captured;
+		n_next			= n_curr;
 
 		// ~ CALC defaults ~
-		calc_sel_in 	= 1'b0;
-		calc_rg_en		= 1'b0;
-		calcselout_		= calc_sel_out;
-		fibsel_			= fib_sel_out;
-		is_looping		= 1'b1;
+		sel_in 			= 1'b0;
+		rg_en			= 1'b0;
+		sel_out_next	= sel_out_curr;
 
 		case(CS)
 			
 			RESET:
 			begin
-				calcselout_ = 1'b0;
-				fibsel_		= 2'b00;
-				//clear_reg	= 1'b1;
-
-				NS			= IMPORT; 
+				sel_out_next	= '0;
+				n_next			= '0;
+				NS				= IMPORT;
 			end
 
 			IMPORT:
 			begin
-				calcselout_ = 1'b0;
-				rdy_in_o	= 1'b1;
-				fibsel_		= 2'b00;
-				//clear_reg	= 1'b1;
+				sel_out_next	= '0;
+				rdy_in_o		= 1'b1;
 
 				if(valid_i) begin
-					n_			= n_i;
-					NS			= CALC;
+					n_next		= n_i;
+					NS			= PRECALC;
 				end
 				else begin
+					n_next		= '0;
 					NS			= IMPORT;
 				end
 			end
 
-			CALC:
-		begin
-				// Priority 0 : n is inside LUT
-				if(n_captured <= LUTMAX) begin
-					calcselout_ = 1'b0;
-					fibsel_		= 2'b01;
-					//clear_reg	= 1'b1;
+			PRECALC:
+			begin
+
+				rg_en			= 1'b1;		// store f16 and f17
+
+				// Priority 0: n is inside LUT
+				if(n_curr <= LUTMAX) begin
+					sel_out_next	= 2'd1;
+					NS				= EXPORT;
 				end	
 
-				// Priority 1 : (edge case) fib will be greater than OUTBITS
-				else if(n_captured > NMAX) begin
-					calcselout_ = 1'b0;
-					fibsel_		= 2'b11;
-					//clear_reg	= 1'b1;
+				// Priority 1: (edge case) fib will be greater than OUTBITS
+				else if(n_curr > NMAX) begin
+					sel_out_next	= 2'd0;
+					NS				= EXPORT;
 				end	
-
-				// Priority 2 : n needs to be calculated
+				// Priority 2: n is between [16,47]
 				else begin
-					fibsel_		= 2'b00;
-					calc_rg_en	= 1'b1;
-
-					// Priority 2a : start calc loop
-					if(i == 0) begin
-						i_next 		= LUTMAX + 8'h03;
-						calc_sel_in	= 1'b0; 
-						
-						// n is 16 or 17
-						if((n_captured - (LUTMAX + 8'h01)) == 0 ) begin
-							calcselout_	= 1'b0;
-							is_looping	= 1'b0;
-
-						end
-						else if((n_captured - (LUTMAX + 8'h01)) == 1 ) begin
-							calcselout_	= 1'b1;
-							is_looping	= 1'b0;
-						end
-					end
-
-					// Priority 2b : continue loop 
-					else begin
-						i_next 		= i + 8'h02;
-						calc_sel_in	= 1'b1; 
-
-						if( (n_captured - i) == 0 ) begin
-							calcselout_	= 1'b0;
-							is_looping	= 1'b0;
-						end
-						else if((n_captured - i) == 1 ) begin
-							calcselout_	= 1'b1;
-							is_looping	= 1'b0;
-						end
-					end
+					sel_out_next	= 2'd0;		// default to inactive 
+					i_next			= 8'd16;	// init counting term
+					NS				= CALC;
 				end
 
-				if(calc_done === 1'b1)	NS = EXPORT;
-				else					NS = CALC;
+			end
+
+			CALC:
+			begin
+
+				sel_in	= 1'b1;	// use prev calc
+				
+				// Priority 0: found term C
+				if( (n_curr- i) == 0 ) begin
+					sel_out_next	= 2'd3;
+					NS				= EXPORT;
+				end
+				// Priority 1: found term D
+				else if((n_curr- i) == 1 ) begin
+					sel_out_next	= 2'd2;
+					NS				= EXPORT;
+				end
+				// Priority 2: keep counting
+				else begin
+					rg_en			= 1'b1; 	// capture current adder calc
+					i_next			= i + 8'd2;
+					NS				= CALC;
+				end
 
 			end
 
 			EXPORT:
 			begin
 				valid_o		= 1'b1;
-				if(rdy_out_i === 1'b1)	NS = IMPORT;
+				if(rdy_out_i == 1'b1)	NS = IMPORT;
 				else					NS = EXPORT;
-
 			end
 
 			default:
@@ -343,7 +293,7 @@ module fib
 		// =======================
 		// locals
 		// =======================
-
+		localparam logic [31:0] FIBMAX		= 32'd2971215073;
 		logic 					f_past_valid;
 		initial					f_past_valid = 0;
 		always @(posedge clk_i)	f_past_valid <= 1;
@@ -369,17 +319,17 @@ module fib
 				(rstn_i && $past(rstn_i) && $past(rstn_i, 2) && $past(rstn_i, 3)) &&
 				(f_past_valid && $past(f_past_valid) && $past(f_past_valid, 2) && $past(f_past_valid, 3))
 			) begin
-				assert($past(n_i, 3) == 8'd0);
-				assert($past(f_reading, 3));
+				assert($past(n_i, 2) == 8'd0);
+				assert($past(f_reading, 2));
 			end
 		end
 
 
 		// high values of n should take 2 cycles to output the ceil code
 		always @(posedge clk_i) begin
-			if(f_past_valid && (fib_o == ERR_CODE && $rose(f_writing))) begin
-				assert($past(n_i,3) > NMAX);
-				assert($past(f_reading, 3));
+			if(f_past_valid && (fib_o == INACTIVE && $rose(f_writing))) begin
+				assert($past(n_i,2) > NMAX);
+				assert($past(f_reading, 2));
 			end
 		end
 

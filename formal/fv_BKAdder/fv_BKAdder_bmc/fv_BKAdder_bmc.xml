@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2026-10-29T15:38:13" hostname="TPX13-YG3-WR" package="fv_BKAdder" id="0" name="bmc" tests="1" errors="0" failures="0" time="1" skipped="0">
+<testsuite timestamp="2026-11-01T17:18:14" hostname="TPX13-YG3-WR" package="fv_BKAdder" id="0" name="bmc" tests="1" errors="0" failures="0" time="1" skipped="0">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -8,51 +8,51 @@
 </properties>
 <testcase classname="bmc" name="build execution" time="0">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in BKAdder at rtl/BKAdder.sv:89.4-89.41" time="0" type="ASSERT" location="rtl/BKAdder.sv:89.4-89.41" id="_witness_.check_assert_rtl_BKAdder_sv_89_9">
+<testcase classname="bmc" name="Property ASSERT in BKAdder at rtl/BKAdder.sv:89.4-89.41" time="0" type="ASSERT" location="rtl/BKAdder.sv:89.4-89.41" id="_witness_.check_rtl_BKAdder_sv_89_assert_9">
 </testcase>
-<system-out>SBY 15:38:11 [fv_BKAdder_bmc] Removing directory '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/fv_BKAdder_bmc'.
-SBY 15:38:11 [fv_BKAdder_bmc] Copy '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/../../rtl' to '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/fv_BKAdder_bmc/src/rtl'.
-SBY 15:38:11 [fv_BKAdder_bmc] engine_0: smtbmc boolector
-SBY 15:38:11 [fv_BKAdder_bmc] base: starting process &quot;cd fv_BKAdder_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 15:38:11 [fv_BKAdder_bmc] base: finished (returncode=0)
-SBY 15:38:11 [fv_BKAdder_bmc] prep: starting process &quot;cd fv_BKAdder_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 15:38:12 [fv_BKAdder_bmc] prep: finished (returncode=0)
-SBY 15:38:12 [fv_BKAdder_bmc] smt2: starting process &quot;cd fv_BKAdder_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 15:38:12 [fv_BKAdder_bmc] smt2: finished (returncode=0)
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: starting process &quot;cd fv_BKAdder_bmc; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 12  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Solver: boolector
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
-SBY 15:38:12 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: ##   0:00:01  Status: passed
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: finished (returncode=0)
-SBY 15:38:13 [fv_BKAdder_bmc] engine_0: Status returned by engine: pass
-SBY 15:38:13 [fv_BKAdder_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
-SBY 15:38:13 [fv_BKAdder_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
-SBY 15:38:13 [fv_BKAdder_bmc] summary: engine_0 (smtbmc boolector) returned pass
-SBY 15:38:13 [fv_BKAdder_bmc] summary: engine_0 did not produce any traces
-SBY 15:38:13 [fv_BKAdder_bmc] DONE (PASS, rc=0)
+<system-out>SBY 17:18:13 [fv_BKAdder_bmc] Removing directory '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/fv_BKAdder_bmc'.
+SBY 17:18:13 [fv_BKAdder_bmc] Copy '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/../../rtl' to '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_BKAdder/fv_BKAdder_bmc/src/rtl'.
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: smtbmc boolector
+SBY 17:18:13 [fv_BKAdder_bmc] base: starting process &quot;cd fv_BKAdder_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:18:13 [fv_BKAdder_bmc] base: finished (returncode=0)
+SBY 17:18:13 [fv_BKAdder_bmc] prep: starting process &quot;cd fv_BKAdder_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 17:18:13 [fv_BKAdder_bmc] prep: finished (returncode=0)
+SBY 17:18:13 [fv_BKAdder_bmc] smt2: starting process &quot;cd fv_BKAdder_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 17:18:13 [fv_BKAdder_bmc] smt2: finished (returncode=0)
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: starting process &quot;cd fv_BKAdder_bmc; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 12  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Solver: boolector
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:18:13 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: ##   0:00:01  Status: passed
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: finished (returncode=0)
+SBY 17:18:14 [fv_BKAdder_bmc] engine_0: Status returned by engine: pass
+SBY 17:18:14 [fv_BKAdder_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 17:18:14 [fv_BKAdder_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 17:18:14 [fv_BKAdder_bmc] summary: engine_0 (smtbmc boolector) returned pass
+SBY 17:18:14 [fv_BKAdder_bmc] summary: engine_0 did not produce any traces
+SBY 17:18:14 [fv_BKAdder_bmc] DONE (PASS, rc=0)
 </system-out>
 <system-err>
 </system-err>
