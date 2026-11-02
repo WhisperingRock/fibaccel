@@ -1,7 +1,7 @@
 ---
 DESIGN_NAME: fib
 VERILOG_FILES: dir::rtl/*.sv
-CLOCK_PERIOD: 20
+CLOCK_PERIOD: 15
 CLOCK_PORT: clk_i
 # Power Distribution Stuff
 PDN_VOFFSET: 7

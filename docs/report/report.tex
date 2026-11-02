@@ -137,9 +137,6 @@
 	\chapter{TODOs}
 		\begin{enumerate}
 			\item Formal verif BMC of fib, not just corner
-			\item STA documentation
-			\item STA digestion
-			\item STA potential fixes
 		\end{enumerate}
 
 	\chapter{Introductions}
@@ -177,7 +174,7 @@
 		Lastly, another motivation of this lab is to become familiar with 
 		open-source tooling set. 
 
-	\chapter{Pre-Synthesis}
+	\chapter{v0 Pre-Synthesis}
 
 		\section{Procedure}
 			The workflow of this lab, which is largely focused on design before
@@ -197,7 +194,7 @@
 				\includegraphics[
 					width			= 0.3\textwidth,
 					keepaspectratio	= true
-				]{./pics/top.png}
+				]{./version0/top.png}
 				\label{fig:top}
 				\caption{Fibonacci Top Module}
 			\end{figure}
@@ -224,7 +221,7 @@
 				\includegraphics[
 					width			= 0.8\textwidth,
 					keepaspectratio	= true
-				]{./pics/fsm.png}
+				]{./version0/fsm.png}
 				\caption{FSM of Fibonacci Accelerator}
 				\label{fig:fsm}
 			\end{figure}
@@ -243,7 +240,7 @@
 				\includegraphics[
 					width			= \textwidth,
 					keepaspectratio	= true
-				]{./pics/accelerator.png}
+				]{./version0/accelerator.png}
 				\caption{Computation Portion of Fib Accelerator}
 				\label{fig:comp}
 			\end{figure}
@@ -253,7 +250,7 @@
 				\includegraphics[
 					width			= 0.4\textwidth,
 					keepaspectratio	= true
-				]{./pics/calc_flow.png}
+				]{./version0/calc_flow.png}
 				\caption{Control Flow of CALC State}
 				\label{fig:calcflow}
 			\end{figure}
@@ -268,14 +265,14 @@
 					\includegraphics[
 						width			= 1.0\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_lowLUT.png}
+					]{./version0/calc_flow_lowLUT.png}
 				\end{subfigure}
 				\begin{subfigure}[t][][b]{\textwidth}
 					\centering
 					\includegraphics[
 						width			= 0.5\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_lowLUT1.png}
+					]{./version0/calc_flow_lowLUT1.png}
 				\end{subfigure}
 				\caption{$n \le 15$ uses the LUT}
 				\label{fig:lowlut}
@@ -288,14 +285,14 @@
 					\includegraphics[
 						width			= 1.0\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_first.png}
+					]{./version0/calc_flow_first.png}
 				\end{subfigure}
 				\begin{subfigure}[t][][b]{\textwidth}
 					\centering
 					\includegraphics[
 						width			= 0.5\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_first1.png}
+					]{./version0/calc_flow_first1.png}
 				\end{subfigure}
 				\caption{$n = 16$ or $n=17$ calculates but doesn't loop}
 				\label{fig:firstcalc}
@@ -308,14 +305,14 @@
 					\includegraphics[
 						width			= 1.0\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_ongoing.png}
+					]{./version0/calc_flow_ongoing.png}
 				\end{subfigure}
 				\begin{subfigure}[t][][b]{\textwidth}
 					\centering
 					\includegraphics[
 						width			= 0.5\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_ongoing1.png}
+					]{./version0/calc_flow_ongoing1.png}
 				\end{subfigure}
 				\caption{$n \ge 18$ and $n \le 47$ calculates using loops}
 				\label{fig:loopcalc}
@@ -328,14 +325,14 @@
 					\includegraphics[
 						width			= 1.0\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_highLUT.png}
+					]{./version0/calc_flow_highLUT.png}
 				\end{subfigure}
 				\begin{subfigure}[t][][b]{\textwidth}
 					\centering
 					\includegraphics[
 						width			= 0.5\textwidth,
 						keepaspectratio	= true
-					]{./pics/calc_flow_highLUT1.png}
+					]{./version0/calc_flow_highLUT1.png}
 				\end{subfigure}
 				\caption{$n > 47$ defaults to avoid output overflow}
 				\label{fig:loopceil}
@@ -406,14 +403,14 @@
 					\caption{Verification Methods for BKAdder}
 				\end{table}
 
-	\chapter{Initial Post-Synthesis Analysis}
+	\chapter{v0 Post-Synthesis Analysis}
 
 		\lstinputlisting[
 			captionpos	= top, 
-			caption		= {Initial LibreLane config settings},
+			caption		= {v0 LibreLane config settings},
 			breaklines	= false, 
 			label		= {}
-		]{./init_postsynth_analysis/config.yaml}	
+		]{./version0/config.yaml}	
 		
 		\section{Static Timing Analysis (Pre-PlaceNRoute)}
 
@@ -424,7 +421,7 @@
 				label		= {sta:init-summary},
 				firstline	= 1292,
 				lastline	= 1310
-			]{./init_postsynth_analysis/initial_flow.log}
+			]{./version0/initial_flow.log}
 
 			\lstinputlisting[
 				basicstyle	=\ttfamily\tiny,
@@ -432,7 +429,7 @@
 				caption		= {openroad-staprepnr Summary},
 				breaklines	= false, 
 				label		= {sta:init-prepnr}
-			]{./init_postsynth_analysis/initial_staprepnr.rpt}
+			]{./version0/initial_staprepnr.rpt}
 
 			After performing an initial static-timing analysis, there
 			is evidence of setup violations in the pre-place and route
@@ -445,7 +442,8 @@
 
 			NOTE: Lets reside in pre-pnr for now, since the likelihood our
 			timing issues will resolve after placement is not good. 
-
+			
+			\newpage
 			\lstinputlisting[
 				basicstyle	=\ttfamily\tiny,
 				captionpos	= top,
@@ -453,7 +451,7 @@
 				breaklines	= false, 
 				label		= {sta:init-max},
 				lastline	= 74
-			]{./init_postsynth_analysis/initial_max.rpt}
+			]{./version0/initial_max.rpt}
 
 			Looking at fig~\ref{sta:init-max}, there are a few items that stand out.
 			\begin{itemize}
@@ -499,10 +497,202 @@
 						output is not needed. 
 				\end{itemize}
 
-				\subsection{Redesign}
+			\newpage
+			\chapter{v1 Redesign + Analysis}
 
+				\begin{figure}[H]
+					\centering
+					\includegraphics[
+						width			= 0.9\textwidth,
+						keepaspectratio	= true
+					]{./version1/accelerator.png}
+					\caption{v1 Accelerator Logic}
+					\label{fig:v1-acc}
+				\end{figure}
 
+				\begin{figure}[H]
+					\centering
+					\includegraphics[
+						width			= 0.6\textwidth,
+						keepaspectratio	= true
+					]{./version1/fsm.png}
+					\caption{v1 Accelerator FSM}
+					\label{fig:v1-fsm}
+				\end{figure}
 
+				\begin{figure}[H]
+					\centering
+					\includegraphics[
+						width			= 0.6\textwidth,
+						keepaspectratio	= true
+					]{./version1/flow.png}
+					\caption{v1 Accelerator Flow}
+					\label{fig:v1-flow}
+				\end{figure}
+				
+				\newpage
+				This redesign 
+				\begin{itemize}
+					\item Removed an output 2-Mux and wired the registers
+						directly to the output mux.
+					\item Removed the \verb|calc_done| logic and based
+						the state logic around CU's internal signals.
+					\item Broke up \verb|CALC| logic into two states \verb|{PRECALC, CALC}|,
+						s.t. \verb|PRECALC| handles the LUT values and 
+						pre-loads $f_{14}$ and $f_{15}$ into the registers, 
+						offsetting AND separating computation from outputting 
+						on the same cycle. 
+					\item Cleaned and simplified the internal logic in CU.
+				\end{itemize}
+
+				The logic is a bit cleaner:
+				\begin{figure}[H]
+					\centering
+					\includegraphics[
+						width			= 0.8\textwidth,
+						keepaspectratio	= true
+					]{./version1/lut_flow.png}
+					\caption{\texttt{PRECALC} flow}
+					\label{fig:v1-precalc}
+				\end{figure}
+	
+				\begin{figure}[H]
+					\centering
+					\includegraphics[
+						width			= 0.8\textwidth,
+						keepaspectratio	= true
+					]{./version1/calc_flow.png}
+					\caption{\texttt{CALC} flow}
+					\label{fig:v1-calc}
+				\end{figure}
+
+				Note, the design meets all testing performed on v0. 
+
+				\newpage
+				\section{v1 Post-Synthesis Analysis}
+
+					\lstinputlisting[
+						basicstyle	= \ttfamily\tiny,
+						captionpos	= top,
+						caption		= {v1 Pre-PNR Summary},
+						breaklines	= false, 
+						linerange	= {242-254, 291-305},
+						label		= {sta:v1-pre-macro},
+					]{./version1/pre_clk_change_overall.log}
+
+					\lstinputlisting[
+						basicstyle	= \ttfamily\tiny,
+						captionpos	= top,
+						caption		= {v1 Pre-PNR STA Highlight},
+						breaklines	= false, 
+						label		= {sta:v1-pre-summ},
+					]{./version1/pre_clk_change_summary.log}
+
+					Fig~\ref{sta:v1-pre-macro} states that we don't have setup 
+					or hold violations but fig~\ref{sta:v1-pre-summ} does still
+					indicate a few hiccups, having negative slack in our 
+					slowest corner case. We've managed to reduce our biggest 
+					setup violation by more than a full clock cycle and 
+					fanout in fig~\ref{sta:v1-prepnr-long} looks better 
+					as well, reducing 126 down to 16! Looking at our critical 
+					path, most of our delay is accumulated around driving 
+					the output signal \verb|fib_o| as well as \verb|mux_a|. 
+
+					\newpage
+					\lstinputlisting[
+						basicstyle	=\ttfamily\tiny,
+						captionpos	= top,
+						caption		= {v1 Pre-PNR Biggest Setup Violator},
+						breaklines	= false, 
+						firstline	= 5,
+						lastline	= 93,
+						label		= {sta:v1-prepnr-long}
+					]{./version1/pre_clk_change_max.log}
+
+					From here, the easier solutions have been implemented, 
+					leaving only a few niche cuts and tunings available. 
+					Consider:
+					\begin{itemize}
+						\item \textbf{Manually reducing the time-padding constants}
+							built into librelane/sky130, meeting STA in a naive 
+							fashion. This won't improve the logic, just lower
+							the timing standards. Different chip makers might
+							afford this to the design but it's unlikely 
+							(and ultimately not a good idea at this phase 
+							of the design). 
+
+						\item \textbf{Further analyze for improvement} will 
+							require more time, something is short supply 
+							for this project. Entertaining ideas s.a.\ adopting a unique 
+							configuration for the muxes, which appear to be
+							a constant in our critical path, appear to have 
+							merit but are no longer free lunches. Further 
+							analysis will have to be performed. 
+
+						\item \textbf{Increasing the clock period} was ultimately
+							the option implemented to meet timing - by increasing the period, 
+							we preserve our current logic and the sky130A standard
+							by making our logic slightly slower.
+					\end{itemize}
+
+				\newpage
+				\section{v1 meeting STA}
+
+					\lstinputlisting[
+						captionpos	= top,
+						caption		= {v1's New config file},
+						breaklines	= false, 
+						label		= {sta:v1-config}
+					]{./version1/new_config.yaml}
+
+					\hl{This change will slow the clock from 100MHz to 66MHz.}
+
+					\lstinputlisting[
+						basicstyle	= \ttfamily\tiny,
+						captionpos	= top,
+						caption		= {v1 Post-PNR Summary},
+						breaklines	= false, 
+						linerange	= {242-254, 291-302},
+						label		= {sta:v1-post-macro},
+					]{./version1/post_clk_change_overall.log}
+
+					\lstinputlisting[
+						basicstyle	= \ttfamily\tiny,
+						captionpos	= top,
+						caption		= {v1 Post-PNR STA Highlight w/ Clock Change},
+						breaklines	= false, 
+						label		= {sta:v1-post-sum},
+					]{./version1/post_clk_change_summary.log}
+
+					\newpage
+					\lstinputlisting[
+						basicstyle	=\ttfamily\tiny,
+						captionpos	= top,
+						caption		= {v1 Post-PNR Biggest Setup Violator w/ Clock Change},
+						breaklines	= false, 
+						firstline	= 5,
+						lastline	= 96,
+						label		= {sta:v1-postpnr-long}
+					]{./version1/post_clk_change_max.log}
+
+					We've arrived to a point where we don't have setup or
+					hold violations nor do we have negative slack across the
+					board, seen in fig~\ref{sta:v1-postpnr-long}. There are still
+					slew timing violations but they are not as severe as the
+					others. By slowing down the clock, we've chosen to make our
+					accelerator more conservative and accept the critical path
+					in its current state. 
+
+			\chapter{Tile Area}
+				The final part of this project was to see if we could
+				fit it on a TinyTapeout tile of $160\mu m \times 100\mu m = 16000\mu m^2$. 
+				The calculated die area ended up being $20,762\mu m^2$, resulting
+				in a  $\sim30\%$ overcast of TT's tile. Potential options for
+				shrinking the accelerator could entail:
+				 \begin{itemize}
+					\item Limiting the output range of our module to 16 or 8 bits.
+					\item Storing less numbers in the LUT at the cost of more compute time.
+				\end{itemize}
 
 	\chapter{Appendix}
 		\section{Code}
@@ -542,16 +732,6 @@
 					label		= {tb-fib}
 				]{../../tests/tb_fib/tb_fib.sv}
 
-		\section{Boneyard}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[
-					width			= 0.8\textwidth,
-					keepaspectratio	= true
-				]{./pics/boneyard.png}
-				\caption{First Draft of Accelerator}
-				\label{fig:boneyard}
-			\end{figure}
 
 	\chapter{References}
 		\begin{enumerate}
