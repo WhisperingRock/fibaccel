@@ -2,11 +2,15 @@
 
 module tb_fib();
 
-	// ~~~~ imports ~~~~
-	import tb_utils_pkg::*;
+	// ~~~~ testing ~~~~
+	`ifdef LOCALTEST
+		import tb_utils_pkg::*;
+		testcase tc; 
+		logic [31:0] tnum;
+	`endif
 	
 	// ~~~~ locals ~~~~
-	localparam 		CLK_PERIOD = 10;
+	localparam 		CLK_PERIOD = 15;
 	logic 			clk,
 					resetn,
 					n_is_valid,
@@ -19,6 +23,14 @@ module tb_fib();
 	localparam	logic [31:0]ERR_CODE	= 32'hFFFF_FFFF;
 	localparam	logic [7:0]	INBITS		= 8;
 	localparam	logic [7:0] NMAX		= 8'd47;
+
+	// ~~~~ Gate-level ~~~~
+	`ifdef USE_POWER_PINS
+		wire VPWR;
+		wire VGND;
+		assign VPWR = 1;
+		assign VGND = 0;
+	`endif
 
 	// ~~~~ functions ~~~~
 	function automatic longint unsigned fibboni(
@@ -42,8 +54,12 @@ module tb_fib();
 		input logic	[7:0]	n_val
 	);
 		// ~ IMPORT ~
-		do @(posedge clk);
+		do begin 
+			@(posedge clk);
+			fib_was_read = 1'b1;
+		end
 		while(rdy_new_n !== 1'b1);
+		fib_was_read = 1'b0;
 
 		n 				= n_val;
 		n_is_valid 		= 1'b1;
@@ -58,10 +74,12 @@ module tb_fib();
 	
 	// ~~~~ instantiations ~~~~
 	fib
+	`ifndef GATELEVEL
 	#(
 		.INBITS		(8),
 		.OUTBITS	(32)
 	)
+	`endif
 	Fib
 	(
 		.clk_i		(clk),
@@ -73,23 +91,24 @@ module tb_fib();
 		.rdy_in_o	(rdy_new_n), 
 		.fib_o		(fib_actual), 
 		.valid_o	(fib_is_valid)
+
+		`ifdef GATELEVEL
+		,
+		.VPWR(VPWR),
+		.VGND(VGND)
+		`endif
 	);
 
 	// ~~~~ heartbeat ~~~~
 	always #(CLK_PERIOD/2) clk = ~clk;
 
-
-	// ~~~~ testing ~~~~
-	testcase tc; 
-	logic [31:0] tnum;
-
-	`ifndef NO_SVA
+	`ifdef USE_SVA
 		// ~~ sequences (unsupported by icarus) ~~
 
 		// ~~ properties (unsupported by icarus) ~~
 		property p1;
-			@(posedge clk) disable iff(!resetn)
-				$rose(resetn) |-> rdy_new_n;
+			@(posedge clk)
+				$rose(resetn) |-> $rose(rdy_new_n);
 		endproperty
 
 		property p2;
@@ -104,9 +123,23 @@ module tb_fib();
 		endproperty
 
 		// ~~ concurrents (unsupported by icarus)~~
-		reset_import	: assert property(p1) else tc.err("Didn't enter IMPORT after RESET");
-		import_export	: assert property(p2) else tc.err("Shouldn't accept new data while holding old");
-		hold_fib		: assert property(p3) else tc.err("fib output wasn't held");
+		reset_import	: assert property(p1) else begin
+			`ifdef	LOCALTEST tc.err("Didn't enter IMPORT after RESET");
+			`else	$display("Didn't enter IMPORT after RESET");
+			`endif
+		end
+
+		import_export	: assert property(p2) else begin
+			`ifdef	LOCALTEST tc.err("Shouldn't accept new data while holding old");
+			`else	$display("Shouldn't accept new data while holding old");
+			`endif
+		end
+
+		hold_fib		: assert property(p3) else begin
+			`ifdef	LOCALTEST tc.err("fib output wasn't held");
+			`else	$display("fib output wasn't held");
+			`endif
+		end
 	`endif
 
 	// ~~~~ time-dependent testing ~~~~
@@ -117,52 +150,64 @@ module tb_fib();
 		$dumpvars(0);
 
 		// ~~ defaults ~~
-		tc				= new();
+		
 		clk				= 1'b1;
 		resetn			= 1'b0;
 		n				= 8'h00;
 		n_is_valid		= 1'b0;
 		fib_was_read	= 1'b0; 
 
+		`ifdef LOCALTEST tc	= new(); `endif
+
 		// ~~ fresh start ~~
-		#100;
+		repeat(10) begin @(posedge clk); end
 		resetn			= 1'b1;
 
 		// ~~ immediate ~~
+		`ifdef LOCALTEST
 		tc.new_test("n in [0,47]");
 		tnum = tc.get_testnum();
+		`endif
 
-			for(logic [7:0] i = 8'h00; i < 8'd48; i = i + 1'b1) begin
+			for(logic [7:0] i = 8'h00; i < 8'd48; i = i + 8'h01) begin
 
 				request_fn(.n_val(i));
 				fib_expected = 32'(fibboni(n));
-				assert(fib_expected === fib_actual) else begin tc.err("fib value didnt match");end
+				assert(fib_expected === fib_actual) else begin 
+					`ifdef 	LOCALTEST tc.err("fib value didn't match");
+					`else	$display("fib value didn't match");
+					`endif
+				end
 
-				repeat(2)begin @(posedge clk); end
+				repeat(2) begin @(posedge clk); end
 				fib_was_read	= 1'b1;
 				@(posedge clk);
 				fib_was_read	= 1'b0;
 			end
 			@(posedge clk);
-		tc.test_done;
+		`ifdef LOCALTEST tc.test_done(); `endif
 
+		`ifdef LOCALTEST
 		tc.new_test("n in 48+");
 		tnum = tc.get_testnum();
-
-			for(logic [7:0] i = 8'd48; i < 8'hFF; i = i + 1'b1) begin
+		`endif
+			for(logic [7:0] i = 8'd48; i < 8'hFF; i = i + 8'h01) begin
 
 				request_fn(.n_val(i));
-				assert(fib_actual == ERR_CODE) else begin tc.err("fib value didnt match"); end
+				assert(fib_actual === ERR_CODE) else begin 
+					`ifdef	LOCALTEST tc.err(" ");
+					`else	$display("fib value didnt match");
+					`endif
+				end
 
-				repeat(2)begin @(posedge clk); end
+				repeat(2) begin @(posedge clk); end
 				fib_was_read	= 1'b1;
 				@(posedge clk);
 				fib_was_read	= 1'b0;
-			@(posedge clk);
+				@(posedge clk);
 			end
-		tc.test_done;
+		`ifdef LOCALTEST tc.test_done(); `endif
 
 		$finish();
 	end
-
 endmodule
