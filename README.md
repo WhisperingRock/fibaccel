@@ -22,9 +22,9 @@ tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", "fibo
 ![work](./docs/flow.png)
 
 ## Current Design
-![top](./docs/version0/top.png)
-![fsm](./docs/version1/fsm.png)
-![acc](./docs/version1/accelerator.png)
+![top](./docs/report/version0/top.png)
+![fsm](./docs/report/version1/fsm.png)
+![acc](./docs/report/version1/accelerator.png)
 
 ##  Task Management
 - [X] DESIGN : First pass
