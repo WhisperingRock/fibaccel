@@ -19,24 +19,26 @@ TESTS = $(TEST_SUBDIRS:/=)
 # Main Linter and Simulatior is Verilator
 LINTER := verilator
 SIMULATOR := verilator
-SIMULATOR_ARGS := --binary --timing --trace --trace-structs \
-	--assert --timescale 1ns --quiet  
+SIMULATOR_ARGS := --binary --timing --quiet --trace --trace-structs \
+--assert --timescale 1ns -DLOCALTEST -DUSE_SVA
 SIMULATOR_BINARY := ./obj_dir/V*
 SIMULATOR_SRCS := $(PKG_SRCS) *.sv
+
 # Optional use of Icarus as Linter and Simulator
 ifdef ICARUS
 SIMULATOR := iverilog
-SIMULATOR_ARGS := -g2012 -DNO_SVA
+SIMULATOR_ARGS := -g2012 -DLOCALTEST
 SIMULATOR_BINARY := a.out
 SIMULATOR_SRCS := $(PKG_SRCS) $(foreach src, $(RTL_SRCS), $(realpath $(src))) *.sv 
 SIM_TOP := `$(shell pwd)/scripts/top.sh -s`
 # LINT_INCLUDES := ""
 endif
+
 # Gate Level Verification
 ifdef GL
 SIMULATOR := iverilog
 LINT_INCLUDES := -I$(PDKPATH) -I$(realpath gl)
-SIMULATOR_ARGS := -g2012 -DFUNCTIONAL -DUSE_POWER_PINS 
+SIMULATOR_ARGS := -g2012 -DFUNCTIONAL -DUSE_POWER_PINS -DGATELEVEL
 SIMULATOR_BINARY := a.out
 SIMULATOR_SRCS = $(realpath gl)/* *.sv
 endif
@@ -114,6 +116,7 @@ $(TESTS):
 		&& !( cat results.log | grep -qi error ) \
 		then \
 			printf "$(GREEN)PASSED $@$(RESET)\n"; \
+			cat results.log; \
 		else \
 			printf "$(RED)FAILED $@$(RESET)\n"; \
 			cat results.log; \
