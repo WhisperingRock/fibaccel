@@ -19,10 +19,23 @@ TESTS = $(TEST_SUBDIRS:/=)
 # Main Linter and Simulatior is Verilator
 LINTER := verilator
 SIMULATOR := verilator
-SIMULATOR_ARGS := --binary --timing --quiet --trace --trace-structs \
---assert --timescale 1ns -DLOCALTEST -DUSE_SVA
+SIMULATOR_ARGS := 	--binary \
+					--timing \
+					--quiet \
+					--trace \
+					--trace-structs \
+					--assert \
+					--coverage \
+					--timescale 1ns \
+					-DLOCALTEST \
+					-DUSE_SVA
+
 SIMULATOR_BINARY := ./obj_dir/V*
 SIMULATOR_SRCS := $(PKG_SRCS) *.sv
+
+# Coverage through Verilator
+COVERAGE_FILES:= $(TEST_DIR)/$(TESTS)/coverage.dat
+MERGED:= $(TEST_DIR)/merged_coverage.dat
 
 # Optional use of Icarus as Linter and Simulator
 ifdef ICARUS
@@ -107,6 +120,7 @@ $(TESTS):
 # Build With Simulator
 	@cd $(TEST_DIR)/$@;\
 		$(SIMULATOR) $(SIMULATOR_ARGS) $(SIMULATOR_SRCS) $(LINT_INCLUDES) $(SIM_TOP) > build.log
+
 	
 	@printf "\n$(BOLD) Running... $(RESET)\n"
 
@@ -147,6 +161,13 @@ yosys:
 	scripts/yosys_sch_launch.sh | yosys
 	netlistsvg ./synth/design.json -o ./synth/gates.svg
 	xdg-open ./synth/gates.svg
+
+.PHONY: merge-coverage
+merge-coverage:
+	verilator_coverage \
+		--report summary,hierarchy \
+		--include-reset-arcs \
+		-write $(MERGED) $(COVERAGE_FILES) > sva_coverage_report.log
 
 .PHONY: clean
 clean:
