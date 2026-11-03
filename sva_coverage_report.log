@@ -1,0 +1,57 @@
+Coverage Summary:
+  line      :  86.0% (  49/  57)
+  toggle    :  79.7% (1758/2206)
+  branch    :  81.2% (  13/  16)
+  expr      :  88.2% ( 487/ 552)
+  fsm_state :   0.0% (   0/   0)
+  fsm_arc   :   0.0% (   0/   0)
+Note: hierarchy report contains collapsed hierarchy paths; it is not precise per-instance coverage.
+Hierarchy Coverage Summary:
+  tb_fib
+    line      :  88.2% (  45/  51)
+    toggle    :  79.7% (1758/2206)
+    branch    :  85.7% (  12/  14)
+    expr      :  88.2% ( 487/ 552)
+  tb_fib.Fib
+    line      :  94.1% (  32/  34)
+    toggle    :  80.7% (1602/1986)
+    branch    :  83.3% (  10/  12)
+    expr      :  88.2% ( 485/ 550)
+  tb_fib.Fib.Addr*
+    toggle    :  96.9% (376/388)
+    expr      :  88.2% (485/550)
+  tb_fib.Fib.mux_*
+    line      : 100.0% (  1/  1)
+    toggle    :  71.1% (138/194)
+    branch    :  50.0% (  1/  2)
+  tb_fib.Fib.mux_fib
+    line      : 100.0% (  1/  1)
+    toggle    :  74.7% (242/324)
+    branch    :  50.0% (  1/  2)
+  tb_utils_pkg::testcase__Vclpkg
+    line      :  66.7% (4/6)
+    branch    :  50.0% (1/2)
+Design Unit Coverage Summary:
+  BKAdder
+    toggle    :  96.9% (376/388)
+    expr      :  88.2% (485/550)
+  Mux_N
+    line      : 100.0% (  1/  1)
+    toggle    :  74.7% (242/324)
+    branch    :  50.0% (  1/  2)
+  Mux_N__I2
+    line      : 100.0% (  1/  1)
+    toggle    :  71.1% (138/194)
+    branch    :  50.0% (  1/  2)
+  fib
+    line      :  93.8% (  30/  32)
+    toggle    :  78.3% ( 846/1080)
+    branch    : 100.0% (   8/   8)
+  tb_fib
+    line      :  76.5% ( 13/ 17)
+    toggle    :  70.9% (156/220)
+    branch    : 100.0% (  2/  2)
+    expr      : 100.0% (  2/  2)
+  testcase
+    line      :  66.7% (4/6)
+    branch    :  50.0% (1/2)

@@ -23,3 +23,6 @@ runs/
 
 # extras
 *.swp
+
+# EXCEPTIONS
+!sva_coverage_report.log
