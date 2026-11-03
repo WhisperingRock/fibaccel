@@ -36,7 +36,7 @@ module fib
 
 	// ~~~~ local vars ~~~~
 	typedef enum logic [2:0] {RESET, IMPORT, PRECALC, CALC, EXPORT} e_state;
-	e_state CS, NS;
+	e_state CS, NS /*verilator fsm_state*/;
 
 	localparam logic [7:0] LUTMAX 		= 8'h0F; //15
 	localparam logic [7:0] NMAX 		= 8'h2F; //47
