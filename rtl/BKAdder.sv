@@ -1,4 +1,6 @@
+/* verilator lint_off UNOPTFLAT */
 `timescale 1ns / 1ps
+
 
 module BKAdder
 #( parameter int WIDTH = 32 )
