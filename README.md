@@ -1,7 +1,7 @@
 ---
 description: Open-Source ASIC in designing a Fibonacci accelerator
 author: WhisperingRock
-tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", ,"openroad","fibonacci"]
+tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane","openroad","fibonacci"]
 ---
 
 ## :toolbox: Toolset
