@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-<testsuite timestamp="2026-11-03T10:06:25" hostname="TPX13-YG3-WR" package="fv_fib" id="0" name="bmc" tests="6" errors="0" failures="0" time="2" skipped="0">
+<testsuite timestamp="2026-11-04T08:10:24" hostname="TPX13-YG3-WR" package="fv_fib" id="0" name="bmc" tests="29" errors="0" failures="0" time="422" skipped="0">
 <properties>
 <property name="os" value="Linux"/>
 <property name="expect" value="PASS"/>
@@ -8,77 +8,108 @@
 </properties>
 <testcase classname="bmc" name="build execution" time="0">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:322.5-322.34" time="0" type="ASSERT" location="rtl/fib.sv:322.5-322.34" id="_witness_.check_rtl_fib_sv_322_assert_79">
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:329.5-329.34" time="0" type="ASSERT" location="rtl/fib.sv:329.5-329.34" id="_witness_.check_rtl_fib_sv_329_assert_122">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:323.5-323.32" time="0" type="ASSERT" location="rtl/fib.sv:323.5-323.32" id="_witness_.check_rtl_fib_sv_323_assert_81">
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:330.5-330.32" time="0" type="ASSERT" location="rtl/fib.sv:330.5-330.32" id="_witness_.check_rtl_fib_sv_330_assert_124">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:331.5-331.32" time="0" type="ASSERT" location="rtl/fib.sv:331.5-331.32" id="_witness_.check_rtl_fib_sv_331_assert_95">
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:337.5-337.32" time="0" type="ASSERT" location="rtl/fib.sv:337.5-337.32" id="_witness_.check_rtl_fib_sv_337_assert_138">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:332.5-332.32" time="0" type="ASSERT" location="rtl/fib.sv:332.5-332.32" id="_witness_.check_rtl_fib_sv_332_assert_97">
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:338.5-338.32" time="0" type="ASSERT" location="rtl/fib.sv:338.5-338.32" id="_witness_.check_rtl_fib_sv_338_assert_140">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in fib/AddrC at rtl/BKAdder.sv:91.4-91.41" time="0" type="ASSERT" location="rtl/BKAdder.sv:91.4-91.41" id="_witness_.check_rtl_BKAdder_sv_91_assert_107">
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:373.6-373.35" time="0" type="ASSERT" location="rtl/fib.sv:373.6-373.35" id="_witness_.check_rtl_fib_sv_373_assert_1000">
 </testcase>
-<testcase classname="bmc" name="Property ASSERT in fib/AddrD at rtl/BKAdder.sv:91.4-91.41" time="0" type="ASSERT" location="rtl/BKAdder.sv:91.4-91.41" id="_witness_.check_rtl_BKAdder_sv_91_assert_107">
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:378.6-378.35" time="0" type="ASSERT" location="rtl/fib.sv:378.6-378.35" id="_witness_.check_rtl_fib_sv_378_assert_1333">
 </testcase>
-<system-out>SBY 10:06:23 [fv_fib_bmc] Removing directory '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/fv_fib_bmc'.
-SBY 10:06:23 [fv_fib_bmc] Copy '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/../../rtl' to '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/fv_fib_bmc/src/rtl'.
-SBY 10:06:23 [fv_fib_bmc] engine_0: smtbmc boolector
-SBY 10:06:23 [fv_fib_bmc] base: starting process &quot;cd fv_fib_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 10:06:23 [fv_fib_bmc] base: finished (returncode=0)
-SBY 10:06:23 [fv_fib_bmc] prep: starting process &quot;cd fv_fib_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
-SBY 10:06:23 [fv_fib_bmc] prep: finished (returncode=0)
-SBY 10:06:23 [fv_fib_bmc] smt2: starting process &quot;cd fv_fib_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
-SBY 10:06:23 [fv_fib_bmc] smt2: finished (returncode=0)
-SBY 10:06:23 [fv_fib_bmc] engine_0: starting process &quot;cd fv_fib_bmc; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Solver: boolector
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
-SBY 10:06:23 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assumptions in step 16..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assertions in step 16..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assumptions in step 17..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assertions in step 17..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assumptions in step 18..
-SBY 10:06:24 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assertions in step 18..
-SBY 10:06:25 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assumptions in step 19..
-SBY 10:06:25 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assertions in step 19..
-SBY 10:06:25 [fv_fib_bmc] engine_0: ##   0:00:02  Status: passed
-SBY 10:06:25 [fv_fib_bmc] engine_0: finished (returncode=0)
-SBY 10:06:25 [fv_fib_bmc] engine_0: Status returned by engine: pass
-SBY 10:06:25 [fv_fib_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
-SBY 10:06:25 [fv_fib_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:02 (2)
-SBY 10:06:25 [fv_fib_bmc] summary: engine_0 (smtbmc boolector) returned pass
-SBY 10:06:25 [fv_fib_bmc] summary: engine_0 did not produce any traces
-SBY 10:06:25 [fv_fib_bmc] DONE (PASS, rc=0)
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:383.6-383.35" time="0" type="ASSERT" location="rtl/fib.sv:383.6-383.35" id="_witness_.check_rtl_fib_sv_383_assert_1660">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:388.6-388.35" time="0" type="ASSERT" location="rtl/fib.sv:388.6-388.35" id="_witness_.check_rtl_fib_sv_388_assert_1981">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:393.6-393.35" time="0" type="ASSERT" location="rtl/fib.sv:393.6-393.35" id="_witness_.check_rtl_fib_sv_393_assert_2296">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:398.6-398.35" time="0" type="ASSERT" location="rtl/fib.sv:398.6-398.35" id="_witness_.check_rtl_fib_sv_398_assert_2605">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:403.6-403.35" time="0" type="ASSERT" location="rtl/fib.sv:403.6-403.35" id="_witness_.check_rtl_fib_sv_403_assert_2908">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:408.6-408.35" time="0" type="ASSERT" location="rtl/fib.sv:408.6-408.35" id="_witness_.check_rtl_fib_sv_408_assert_3205">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:413.6-413.35" time="0" type="ASSERT" location="rtl/fib.sv:413.6-413.35" id="_witness_.check_rtl_fib_sv_413_assert_3496">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:418.6-418.35" time="0" type="ASSERT" location="rtl/fib.sv:418.6-418.35" id="_witness_.check_rtl_fib_sv_418_assert_3781">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:423.6-423.35" time="0" type="ASSERT" location="rtl/fib.sv:423.6-423.35" id="_witness_.check_rtl_fib_sv_423_assert_4060">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:428.6-428.35" time="0" type="ASSERT" location="rtl/fib.sv:428.6-428.35" id="_witness_.check_rtl_fib_sv_428_assert_4333">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:433.6-433.35" time="0" type="ASSERT" location="rtl/fib.sv:433.6-433.35" id="_witness_.check_rtl_fib_sv_433_assert_4600">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:438.6-438.35" time="0" type="ASSERT" location="rtl/fib.sv:438.6-438.35" id="_witness_.check_rtl_fib_sv_438_assert_4861">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:443.6-443.35" time="0" type="ASSERT" location="rtl/fib.sv:443.6-443.35" id="_witness_.check_rtl_fib_sv_443_assert_5116">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:448.6-448.35" time="0" type="ASSERT" location="rtl/fib.sv:448.6-448.35" id="_witness_.check_rtl_fib_sv_448_assert_5365">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:453.6-453.35" time="0" type="ASSERT" location="rtl/fib.sv:453.6-453.35" id="_witness_.check_rtl_fib_sv_453_assert_5608">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:458.6-458.15" time="0" type="ASSERT" location="rtl/fib.sv:458.6-458.15" id="_witness_.check_rtl_fib_sv_458_assert_5610">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:471.8-471.25" time="0" type="ASSERT" location="rtl/fib.sv:471.8-471.25" id="_witness_.check_rtl_fib_sv_471_assert_5621">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:473.6-473.23" time="0" type="ASSERT" location="rtl/fib.sv:473.6-473.23" id="_witness_.check_rtl_fib_sv_473_assert_5622">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:475.6-475.23" time="0" type="ASSERT" location="rtl/fib.sv:475.6-475.23" id="_witness_.check_rtl_fib_sv_475_assert_5624">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:477.6-477.23" time="0" type="ASSERT" location="rtl/fib.sv:477.6-477.23" id="_witness_.check_rtl_fib_sv_477_assert_5627">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib at rtl/fib.sv:479.6-479.23" time="0" type="ASSERT" location="rtl/fib.sv:479.6-479.23" id="_witness_.check_rtl_fib_sv_479_assert_5631">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib/AddrC at rtl/BKAdder.sv:91.4-91.41" time="0" type="ASSERT" location="rtl/BKAdder.sv:91.4-91.41" id="_witness_.check_rtl_BKAdder_sv_91_assert_5641">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fib/AddrD at rtl/BKAdder.sv:91.4-91.41" time="0" type="ASSERT" location="rtl/BKAdder.sv:91.4-91.41" id="_witness_.check_rtl_BKAdder_sv_91_assert_5641">
+</testcase>
+<system-out>SBY  8:03:27 [fv_fib_bmc] Removing directory '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/fv_fib_bmc'.
+SBY  8:03:27 [fv_fib_bmc] Copy '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/../../rtl' to '/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/fv_fib_bmc/src/rtl'.
+SBY  8:03:27 [fv_fib_bmc] engine_0: smtbmc boolector
+SBY  8:03:27 [fv_fib_bmc] base: starting process &quot;cd fv_fib_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  8:03:48 [fv_fib_bmc] base: finished (returncode=0)
+SBY  8:03:48 [fv_fib_bmc] prep: starting process &quot;cd fv_fib_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  8:03:52 [fv_fib_bmc] prep: finished (returncode=0)
+SBY  8:03:52 [fv_fib_bmc] smt2: starting process &quot;cd fv_fib_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  8:03:54 [fv_fib_bmc] smt2: finished (returncode=0)
+SBY  8:03:54 [fv_fib_bmc] engine_0: starting process &quot;cd fv_fib_bmc; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 12  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY  8:03:54 [fv_fib_bmc] engine_0: ##   0:00:00  Solver: boolector
+SBY  8:03:55 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY  8:03:55 [fv_fib_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY  8:03:55 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assumptions in step 1..
+SBY  8:03:55 [fv_fib_bmc] engine_0: ##   0:00:01  Checking assertions in step 1..
+SBY  8:03:56 [fv_fib_bmc] engine_0: ##   0:00:02  Checking assumptions in step 2..
+SBY  8:03:56 [fv_fib_bmc] engine_0: ##   0:00:02  Checking assertions in step 2..
+SBY  8:03:56 [fv_fib_bmc] engine_0: ##   0:00:02  Checking assumptions in step 3..
+SBY  8:03:56 [fv_fib_bmc] engine_0: ##   0:00:02  Checking assertions in step 3..
+SBY  8:03:57 [fv_fib_bmc] engine_0: ##   0:00:03  Checking assumptions in step 4..
+SBY  8:03:57 [fv_fib_bmc] engine_0: ##   0:00:03  Checking assertions in step 4..
+SBY  8:03:58 [fv_fib_bmc] engine_0: ##   0:00:04  Checking assumptions in step 5..
+SBY  8:03:58 [fv_fib_bmc] engine_0: ##   0:00:04  Checking assertions in step 5..
+SBY  8:04:01 [fv_fib_bmc] engine_0: ##   0:00:07  Checking assumptions in step 6..
+SBY  8:04:02 [fv_fib_bmc] engine_0: ##   0:00:08  Checking assertions in step 6..
+SBY  8:04:05 [fv_fib_bmc] engine_0: ##   0:00:11  Checking assumptions in step 7..
+SBY  8:04:08 [fv_fib_bmc] engine_0: ##   0:00:14  Checking assertions in step 7..
+SBY  8:04:56 [fv_fib_bmc] engine_0: ##   0:01:02  Checking assumptions in step 8..
+SBY  8:05:04 [fv_fib_bmc] engine_0: ##   0:01:10  Checking assertions in step 8..
+SBY  8:05:27 [fv_fib_bmc] engine_0: ##   0:01:33  Checking assumptions in step 9..
+SBY  8:05:35 [fv_fib_bmc] engine_0: ##   0:01:41  Checking assertions in step 9..
+SBY  8:06:11 [fv_fib_bmc] engine_0: ##   0:02:16  Checking assumptions in step 10..
+SBY  8:06:22 [fv_fib_bmc] engine_0: ##   0:02:28  Checking assertions in step 10..
+SBY  8:07:11 [fv_fib_bmc] engine_0: ##   0:03:17  Checking assumptions in step 11..
+SBY  8:07:22 [fv_fib_bmc] engine_0: ##   0:03:28  Checking assertions in step 11..
+SBY  8:08:22 [fv_fib_bmc] engine_0: ##   0:04:28  waiting for solver (1 minute)
+SBY  8:10:24 [fv_fib_bmc] engine_0: ##   0:06:30  Status: passed
+SBY  8:10:24 [fv_fib_bmc] engine_0: finished (returncode=0)
+SBY  8:10:24 [fv_fib_bmc] engine_0: Status returned by engine: pass
+SBY  8:10:24 [fv_fib_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:06:56 (416)
+SBY  8:10:24 [fv_fib_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:07:02 (422)
+SBY  8:10:24 [fv_fib_bmc] summary: engine_0 (smtbmc boolector) returned pass
+SBY  8:10:24 [fv_fib_bmc] summary: engine_0 did not produce any traces
+SBY  8:10:24 [fv_fib_bmc] DONE (PASS, rc=0)
 </system-out>
 <system-err>
 </system-err>

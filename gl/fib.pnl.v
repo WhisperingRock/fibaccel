@@ -38,37 +38,37 @@ module fib (clk_i,
  wire \CS[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__or2_2_X_B ;
  wire \CS[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__or2_2_X_B_sky130_fd_sc_hd__and4bb_2_X_A_N ;
  wire \CS[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__or2_2_X_B_sky130_fd_sc_hd__and4bb_2_X_B_N ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2 ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9] ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
- wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2 ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9] ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D ;
+ wire \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ;
  wire net12;
  wire net13;
  wire net14;
@@ -7878,202 +7878,202 @@ module fib (clk_i,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_0_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_0_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0] ));
- sky130_fd_sc_hd__xnor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y  (.A(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ),
-    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0] ));
+ sky130_fd_sc_hd__xnor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y  (.A(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ),
+    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__a21o_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A_sky130_fd_sc_hd__a21o_2_X  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__a21o_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A_sky130_fd_sc_hd__a21o_2_X  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .A2(\n_curr[0]_sky130_fd_sc_hd__a22oi_2_B2_Y ),
-    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ),
+    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ));
- sky130_fd_sc_hd__o21a_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B_sky130_fd_sc_hd__o21a_2_X  (.A1(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
-    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ));
+ sky130_fd_sc_hd__o21a_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B_sky130_fd_sc_hd__o21a_2_X  (.A1(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
+    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_3_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_3_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1] ));
- sky130_fd_sc_hd__xnor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y  (.A(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ),
-    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1] ));
+ sky130_fd_sc_hd__xnor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y  (.A(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ),
+    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__nor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A_sky130_fd_sc_hd__nor2_2_Y  (.A(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
-    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__nor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A_sky130_fd_sc_hd__nor2_2_Y  (.A(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
+    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ));
- sky130_fd_sc_hd__o22a_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B_sky130_fd_sc_hd__o22a_2_X  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_A ));
+ sky130_fd_sc_hd__o22a_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B_sky130_fd_sc_hd__o22a_2_X  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .A2(\n_curr[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
-    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
-    .B2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ),
+    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
+    .B2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_3_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__xnor2_2_Y_B ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_3_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2] ));
- sky130_fd_sc_hd__mux2_1 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X  (.A0(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ),
-    .A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2] ));
+ sky130_fd_sc_hd__mux2_1 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X  (.A0(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ),
+    .A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
     .S(\n_curr[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__and2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0_sky130_fd_sc_hd__and2_2_X  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__and2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0_sky130_fd_sc_hd__and2_2_X  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_3_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__mux2_1_X_A0 ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_3_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3] ));
- sky130_fd_sc_hd__a22o_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
-    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
-    .B2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2 ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3] ));
+ sky130_fd_sc_hd__a22o_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ),
+    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .B2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__nor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2_sky130_fd_sc_hd__nor2_2_Y  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__nor2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2_sky130_fd_sc_hd__nor2_2_Y  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ));
- sky130_fd_sc_hd__nand2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2_sky130_fd_sc_hd__nand2_2_Y  (.A(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_A2 ));
+ sky130_fd_sc_hd__nand2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2_sky130_fd_sc_hd__nand2_2_Y  (.A(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .B(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2 ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a22o_2_X_B2 ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4] ));
- sky130_fd_sc_hd__o211a_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X  (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4] ));
+ sky130_fd_sc_hd__o211a_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X  (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
     .A2(\n_curr[0]_sky130_fd_sc_hd__a22oi_2_B2_Y ),
-    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ),
+    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ),
     .C1(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__or2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1_sky130_fd_sc_hd__or2_2_X  (.A(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__or2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1_sky130_fd_sc_hd__or2_2_X  (.A(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .B(\n_curr[0]_sky130_fd_sc_hd__a22oi_2_B2_Y ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_B1 ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5] ));
- sky130_fd_sc_hd__a21oi_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y  (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
-    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
-    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5] ));
+ sky130_fd_sc_hd__a21oi_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y  (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ),
+    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
+    .B1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__o21ai_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1_sky130_fd_sc_hd__o21ai_2_Y  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__o21ai_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1_sky130_fd_sc_hd__o21ai_2_Y  (.A1(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .A2(\n_curr[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .B1(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6] ));
- sky130_fd_sc_hd__o21ba_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o21ba_2_X  (.A1(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
-    .B1_N(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6] ));
+ sky130_fd_sc_hd__o21ba_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o21ba_2_X  (.A1(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .A2(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
+    .B1_N(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__a21oi_2_Y_B1 ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7] ));
- sky130_fd_sc_hd__and3b_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3b_2_X  (.A_N(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7] ));
+ sky130_fd_sc_hd__and3b_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3b_2_X  (.A_N(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .B(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .C(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8] ));
- sky130_fd_sc_hd__and4_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and4_2_X  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8] ));
+ sky130_fd_sc_hd__and4_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and4_2_X  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .B(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .C(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .D(\n_curr[0]_sky130_fd_sc_hd__a22oi_2_B2_Y ),
@@ -8081,29 +8081,29 @@ module fib (clk_i,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
-    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__dfxtp_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_2_0_clk_i),
+    .D(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9] ));
- sky130_fd_sc_hd__and3_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .Q(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9] ));
+ sky130_fd_sc_hd__and3_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X  (.A(\n_curr[3]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .B(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
-    .C(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
+    .C(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
- sky130_fd_sc_hd__and2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C_sky130_fd_sc_hd__and2_2_X  (.A(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D ));
+ sky130_fd_sc_hd__and2_2 \LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C_sky130_fd_sc_hd__and2_2_X  (.A(\n_curr[1]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .B(\n_curr[0]_sky130_fd_sc_hd__dfxtp_2_Q_D ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ));
+    .X(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__and3_2_X_C ));
  sky130_fd_sc_hd__decap_3 PHY_EDGE_ROW_0_Left_46 (.VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -9750,7 +9750,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .Y(fib_o_sky130_fd_sc_hd__a2bb2o_2_X_A2_N));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[9] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[9] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_B1),
     .B2(net66),
@@ -9759,7 +9759,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(net43));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_1 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[8] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_1 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[8] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_1_B1),
     .B2(net66),
@@ -9776,7 +9776,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_1_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_2 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[7] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_2 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[7] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_2_B1),
     .B2(net66),
@@ -9793,7 +9793,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_2_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_3 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[6] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_3 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[6] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_3_B1),
     .B2(net66),
@@ -9810,7 +9810,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_3_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_4 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[5] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_4 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[5] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_4_B1),
     .B2(net66),
@@ -9827,7 +9827,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_4_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_5 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_5 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_5_B1),
     .B2(net66),
@@ -9844,7 +9844,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_5_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_6 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[3] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_6 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[3] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_6_B1),
     .B2(net66),
@@ -9861,7 +9861,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_6_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_7 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[2] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_7 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[2] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_7_B1),
     .B2(net66),
@@ -9878,7 +9878,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_7_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_8 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[1] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_8 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[1] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_8_B1),
     .B2(net66),
@@ -9895,7 +9895,7 @@ module fib (clk_i,
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(fib_o_sky130_fd_sc_hd__o22a_2_X_8_B1));
- sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_9 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[0] ),
+ sky130_fd_sc_hd__o22a_2 fib_o_sky130_fd_sc_hd__o22a_2_X_9 (.A1(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[0] ),
     .A2(fib_o_sky130_fd_sc_hd__o22a_2_X_A2),
     .B1(fib_o_sky130_fd_sc_hd__o22a_2_X_9_B1),
     .B2(net66),
@@ -15215,7 +15215,7 @@ module fib (clk_i,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
-    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:91$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ));
+    .Y(\LUT$func$/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/rtl/fib.sv:95$6.$result[4]_sky130_fd_sc_hd__dfxtp_2_Q_D_sky130_fd_sc_hd__o211a_2_X_A1 ));
  sky130_fd_sc_hd__dfxtp_2 \n_curr[2]_sky130_fd_sc_hd__dfxtp_2_Q  (.CLK(clknet_4_0_0_clk_i),
     .D(\n_curr[2]_sky130_fd_sc_hd__a22o_2_B2_X ),
     .VGND(VGND),

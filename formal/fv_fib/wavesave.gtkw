@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v4.0.0-prealpha (f6d60e0) (w)1999-2022 BSI
+[*] Tue Nov  3 22:49:11 2026
+[*]
+[dumpfile] "/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/fv_fib_prove/engine_0/trace_induct.vcd"
+[dumpfile_mtime] "Tue Nov  3 22:45:46 2026"
+[dumpfile_size] 80628
+[savefile] "/home/whirck/Desktop/Sources/2026_Fall/class/CP470_OpenS_ASIC/02_labs/lab1-main/formal/fv_fib/wavesave.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] -27 -24
+*-5.053728 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[treeopen] fib.
+[treeopen] fib.LUT$func$rtl/fib.
+[sst_width] 297
+[signals_width] 178
+[sst_expanded] 1
+[sst_vpaned_height] 304
+@28
+fib.clk_i
+fib.rstn_i
+fib.f_past_valid
+@200
+-
+@28
+fib.f_reading
+@22
+fib.n_i[7:0]
+fib.n_curr[7:0]
+@200
+-
+@28
+fib.f_writing
+@22
+fib.fib_o[31:0]
+@200
+-
+@22
+fib.mux_din_c[127:0]
+@23
+fib.LUT$func$rtl/fib.\sv:91$8.\$result[15:0]
+@28
+fib.CS[2:0]
+[pattern_trace] 1
+[pattern_trace] 0
