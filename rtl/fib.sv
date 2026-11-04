@@ -36,7 +36,7 @@ module fib
 
 	// ~~~~ local vars ~~~~
 	typedef enum logic [2:0] {RESET, IMPORT, PRECALC, CALC, EXPORT} e_state;
-	e_state CS, NS /*verilator fsm_state*/;
+	e_state CS, NS;
 
 	localparam logic [7:0] LUTMAX 		= 8'h0F; //15
 	localparam logic [7:0] NMAX 		= 8'h2F; //47
@@ -44,22 +44,22 @@ module fib
 
 	function logic [15:0] LUT (input logic [3:0] idx);
 		case(idx)
-			4'd0:		LUT = 16'd0;
-			4'd1:		LUT = 16'd1;
-			4'd2:		LUT = 16'd1;
-			4'd3:		LUT = 16'd2;
-			4'd4:		LUT = 16'd3;
-			4'd5:		LUT = 16'd5;
-			4'd6:		LUT = 16'd8;
-			4'd7:		LUT = 16'd13;
-			4'd8:		LUT = 16'd21;
-			4'd9:		LUT = 16'd34;
-			4'd10:		LUT = 16'd55;
-			4'd11:		LUT = 16'd89;
-			4'd12:		LUT = 16'd144;
-			4'd13:		LUT = 16'd233;
-			4'd14:		LUT = 16'd377;
-			4'd15:		LUT = 16'd610;
+			4'h0:		LUT = 16'h00_00;
+			4'h1:		LUT = 16'h00_01;
+			4'h2:		LUT = 16'h00_01;
+			4'h3:		LUT = 16'h00_02;
+			4'h4:		LUT = 16'h00_03;
+			4'h5:		LUT = 16'h00_05;
+			4'h6:		LUT = 16'h00_08;
+			4'h7:		LUT = 16'h00_0D; //13
+			4'h8:		LUT = 16'h00_15; //21
+			4'h9:		LUT = 16'h00_22; //34
+			4'hA:		LUT = 16'h00_37; //55
+			4'hB:		LUT = 16'h00_59; //89
+			4'hC:		LUT = 16'h00_90; //144
+			4'hD:		LUT = 16'h00_E9; //233
+			4'hE:		LUT = 16'h01_79; //377
+			4'hF:		LUT = 16'h02_62; //610
 			default:	LUT = 16'hDEAD;
 		endcase
 	endfunction
@@ -82,15 +82,22 @@ module fib
 	logic [3:0][OUTBITS-1:0]mux_din_c;
 	logic [OUTBITS-1:0]		mux_dout_a,
 							mux_dout_b;
+	wire [OUTBITS/2 -1:0]	lut_val;
 
-	assign mux_din_a 	= {regC, {16'd0, 16'd377} };
-	assign mux_din_b 	= {regD, {16'd0, 16'd610} };
-	assign mux_din_c	= {
-							regC, 
-							regD, 
-							{16'd0, LUT(n_curr[3:0])}, 
-							INACTIVE
-						};
+
+	assign mux_din_a[0]	= {16'h0, 16'h01_79};
+	assign mux_din_a[1]	= regC;
+
+
+	assign mux_din_b[0]	= {16'h0, 16'h02_62};
+	assign mux_din_b[1]	= regD;
+
+	assign lut_val		= LUT(n_curr[3:0]);
+
+	assign mux_din_c[0]	= INACTIVE; 
+	assign mux_din_c[1]	= {16'h0, lut_val};
+	assign mux_din_c[2]	= regD;
+	assign mux_din_c[3]	= regC;
 
 	Mux_N
 	#(
@@ -164,7 +171,7 @@ module fib
 		if(rstn_i == 1'b0 ) begin
 			i				<= '0;
 			n_curr			<= '0;
-			sel_out_curr 	<= 2'b00;
+			sel_out_curr 	<= '0;
 			regC			<= '0;
 			regD			<= '0;
 			CS				<= RESET;
@@ -228,23 +235,23 @@ module fib
 			PRECALC:
 			begin
 
-				rg_en			= 1'b1;		// store f16 and f17
+				rg_en				= 1'b1;		// store f16 and f17
 
 				// Priority 0: n is inside LUT
 				if(n_curr <= LUTMAX) begin
-					sel_out_next	= 2'd1;
+					sel_out_next	= 2'b01;
 					NS				= EXPORT;
 				end	
 
 				// Priority 1: (edge case) fib will be greater than OUTBITS
 				else if(n_curr > NMAX) begin
-					sel_out_next	= 2'd0;
+					sel_out_next	= 2'b0;
 					NS				= EXPORT;
 				end	
 				// Priority 2: n is between [16,47]
 				else begin
-					sel_out_next	= 2'd0;		// default to inactive 
-					i_next			= 8'd16;	// init counting term
+					sel_out_next	= 2'b0;		// default to inactive 
+					i_next			= 8'h10;	// init counting term
 					NS				= CALC;
 				end
 
@@ -257,18 +264,18 @@ module fib
 				
 				// Priority 0: found term C
 				if( (n_curr- i) == 0 ) begin
-					sel_out_next	= 2'd3;
+					sel_out_next	= 2'b11;
 					NS				= EXPORT;
 				end
 				// Priority 1: found term D
 				else if((n_curr- i) == 1 ) begin
-					sel_out_next	= 2'd2;
+					sel_out_next	= 2'b10;
 					NS				= EXPORT;
 				end
 				// Priority 2: keep counting
 				else begin
 					rg_en			= 1'b1; 	// capture current adder calc
-					i_next			= i + 8'd2;
+					i_next			= i + 8'h02;
 					NS				= CALC;
 				end
 
@@ -276,9 +283,9 @@ module fib
 
 			EXPORT:
 			begin
-				valid_o		= 1'b1;
-				if(rdy_out_i == 1'b1)	NS = IMPORT;
-				else					NS = EXPORT;
+				valid_o						= 1'b1;
+				if(rdy_out_i == 1'b1)	NS	= IMPORT;
+				else					NS	= EXPORT;
 			end
 
 			default:
@@ -313,26 +320,24 @@ module fib
 		// Fib Boundary Checks (TODO not passing Ind)
 		// =======================
 
-		// a zero output must mean the input was zero (not including reset)
+		// A natural zero output means the input must also be zero
 		always @(posedge clk_i) begin
-			if( (fib_o == 32'd0 && $rose(f_writing)) &&
-				(rstn_i && $past(rstn_i) && $past(rstn_i, 2) && $past(rstn_i, 3)) &&
-				(f_past_valid && $past(f_past_valid) && $past(f_past_valid, 2) && $past(f_past_valid, 3))
+			if( (fib_o == 32'h0 && $rose(f_writing)) &&
+				(rstn_i && $stable(rstn_i)) &&
+				(f_past_valid && $stable(f_past_valid))
 			) begin
-				assert($past(n_i, 2) == 8'd0);
+				assert($past(n_i, 2) == 8'h0);
 				assert($past(f_reading, 2));
 			end
 		end
 
-
-		// high values of n should take 2 cycles to output the ceil code
+		// A natural invalid output means the input went over the max 
 		always @(posedge clk_i) begin
 			if(f_past_valid && (fib_o == INACTIVE && $rose(f_writing))) begin
 				assert($past(n_i,2) > NMAX);
 				assert($past(f_reading, 2));
 			end
 		end
-
 
 		// =======================
 		// Data Integrity (TODO not passing Ind)
@@ -352,6 +357,144 @@ module fib
 			end
 			fibboni = a;
 		endfunction
+		
+		// Ensure data is coming from equation
+		(* keep *) logic [OUTBITS-1:0]	fib_expected;
+		always @(posedge clk_i) begin
+			if(
+				f_past_valid 		&&
+				$rose(f_writing)	&&
+				$stable(rstn_i)		&&
+				fib_o != INACTIVE
+			) begin
+	
+				if		($past(f_reading, 1)) begin
+					fib_expected = 32'(fibboni($past(n_i, 1)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 2)) begin
+					fib_expected = 32'(fibboni($past(n_i, 2)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 3)) begin
+					fib_expected = 32'(fibboni($past(n_i, 3)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 4)) begin
+					fib_expected = 32'(fibboni($past(n_i, 4)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 5)) begin
+					fib_expected = 32'(fibboni($past(n_i, 5)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 6)) begin
+					fib_expected = 32'(fibboni($past(n_i, 6)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 7)) begin
+					fib_expected = 32'(fibboni($past(n_i, 7)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 8)) begin
+					fib_expected = 32'(fibboni($past(n_i, 8)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 9)) begin
+					fib_expected = 32'(fibboni($past(n_i, 9)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 10)) begin
+					fib_expected = 32'(fibboni($past(n_i, 10)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 11)) begin
+					fib_expected = 32'(fibboni($past(n_i, 11)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 12)) begin
+					fib_expected = 32'(fibboni($past(n_i, 12)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 13)) begin
+					fib_expected = 32'(fibboni($past(n_i, 13)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 14)) begin
+					fib_expected = 32'(fibboni($past(n_i, 14)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 15)) begin
+					fib_expected = 32'(fibboni($past(n_i, 15)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 16)) begin
+					fib_expected = 32'(fibboni($past(n_i, 16)));
+					assert(fib_o == fib_expected);
+				end
+
+				else if	($past(f_reading, 17)) begin
+					fib_expected = 32'(fibboni($past(n_i, 17)));
+					assert(fib_o == fib_expected);
+				end
+
+				// should have seen a past read
+				else begin
+					assert(0);
+				end
+
+
+			end
+		end
+
+		// =======================
+		// Liveness Checking
+		// =======================
+		always@(posedge clk_i) if (rstn_i) begin
+			if($past(rstn_i)) begin
+				if		($past(f_waiting) && valid_i)
+				   assert(f_reading); 
+		   		else if	($past(f_reading))
+					assert(f_calcing);
+		   		else if	($past(f_calcing) && valid_o)
+					assert(f_writing);
+		   		else if	($past(f_writing) && valid_i && rdy_in_o)
+					assert(f_reading);
+				else if	($past(f_writing) && !valid_i && rdy_in_o)
+					assert(f_waiting);
+
+			end
+		end
+
+		// =======================
+		// Induction Hardening
+		// =======================
+/*
+		always@(*) if (!f_past_valid) begin
+			assume(lut_val == LUT(n_curr[3:0]));
+		end
+
+		// ensure LUT is assigned accurately 
+		always @(posedge clk_i) if (f_past_valid) begin
+			assert(mux_din_c[1] == {16'h0, lut_val});
+		end
+*/
+
 
 	`endif
 
