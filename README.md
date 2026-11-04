@@ -1,12 +1,12 @@
 ---
 description: Open-Source ASIC in designing a Fibonacci accelerator
 author: WhisperingRock
-tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", "fibonacci"]
+tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", ,"openroad","fibonacci"]
 ---
 
 ## :toolbox: Toolset
-| Phase | Verilator | Icarus | Yosys | Librelane |
-| ---      | --- | --- | --- | --- |
+| Phase | Verilator | Icarus | Yosys | Librelane | Openroad |
+| ---      | --- | --- | --- | --- | --- |
 | Lint     | &check; |&check; |
 | SVA      | &check; | :heavy_division_sign: |
 | Formal   ||| &check; |
@@ -17,6 +17,7 @@ tags: ["open-source", "asic", "verilator", "icarus", "yosys", "librelane", "fibo
 |Annt Check|||| &check; |
 |Gate-Level|| &check; |
 |Design Area|||| &check; |
+|Chip Visuals||||| &check; |
 
 :heavy_division_sign: - Icarus doesn't support concurrent SVA
 
@@ -35,6 +36,6 @@ a die area of 21,000 um2.
 - [X] DESIGN : First pass
 - [X] LAYOUT : Correct STA violations 
 - [X] LAYOUT : Gate-level testing
-- [ ] FORMAL : Complete BMC modeling
-- [ ] FORMAL : Attempt IND modeling
+- [X] FORMAL : Complete BMC modeling
+- [ ] FORMAL : IND modeling
 
